@@ -794,7 +794,6 @@ exe "hi! rubyRegexpSpecial"   . s:fg_orange   .s:bg_back   .s:fmt_bold
 exe "hi! rubyRegexp"          . s:fg_orange   .s:bg_back   .s:fmt_bold
 exe "hi! rubyPseudoVariable"  . s:fg_violet   .s:bg_back   .s:fmt_bold
 exe "hi! rubyBoolean"         . s:fg_violet   .s:bg_back   .s:fmt_bold
-exe "hi! rubyInteger"         . s:fg_orange   .s:bg_back   .s:fmt_bold
 "rubyInclude
 "rubySharpBang
 "rubyAccess
@@ -1128,30 +1127,33 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 " Custom colors by @remi {{{
 
 " filename
-exe 'hi User1          guibg='.s:blue.'               guifg='.s:base1
+exe 'hi! User1          ' . s:fmt_none . s:bg_blue   . s:fg_base1
 
 " attribute names
-exe 'hi User3          guibg='.s:base02.'               guifg='.s:base01
+exe 'hi! User3          ' . s:fmt_none . s:bg_base02 . s:fg_base01
 
 " attribute values
-exe 'hi User4          guibg='.s:base02.'               guifg='.s:base1
+exe 'hi! User4          ' . s:fmt_none . s:bg_base02 . s:fg_base1
 
 " help
-exe 'hi User5          guibg='.s:base02.'                guifg='.s:magenta
+exe 'hi! User5          ' . s:fmt_none . s:bg_base02 . s:fg_magenta
 
 " readonly
-exe 'hi User6          guibg='.s:base02.'                guifg='.s:cyan
+exe 'hi! User6          ' . s:fmt_none . s:bg_base02 . s:fg_cyan
 
 " modified
-exe 'hi User7          guibg='.s:base02.'                guifg='.s:orange
+exe 'hi! User7          ' . s:fmt_none . s:bg_base02 . s:fg_orange
 
 " FuzzyFileFinder prompt
-exe 'hi User8          guibg=NONE                guifg='.s:base1
+exe 'hi! User8          ' . s:fmt_none . s:bg_none   . s:fg_base1
 
 " What is this again?
-exe 'hi User9          guibg='.s:base02.'                guifg='.s:green
+exe 'hi! User9          ' . s:fmt_none . s:bg_base02 . s:fg_green
 
 " WileMenu matches
-exe "hi! WildMenu"       .s:fmt_none   .s:fg_base2  .s:bg_blue
+exe 'hi! WildMenu       ' . s:fmt_none . s:fg_base2  . s:bg_blue
+
+" Comments
+exe 'hi! Comment        ' . s:fmt_none . ' guifg=#476C80'
 
 " }}}
