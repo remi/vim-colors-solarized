@@ -1115,3 +1115,33 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 "
 " vim:foldmethod=marker:foldlevel=0
 "}}}
+" Custom colors by @remi {{{
+
+" filename
+exe 'hi User1          guibg='.s:blue.'               guifg='.s:base1
+
+" attribute names
+exe 'hi User3          guibg='.s:base02.'               guifg='.s:base01
+
+" attribute values
+exe 'hi User4          guibg='.s:base02.'               guifg='.s:base1
+
+" help
+exe 'hi User5          guibg='.s:base02.'                guifg='.s:magenta
+
+" readonly
+exe 'hi User6          guibg='.s:base02.'                guifg='.s:cyan
+
+" modified
+exe 'hi User7          guibg='.s:base02.'                guifg='.s:orange
+
+" FuzzyFileFinder prompt
+exe 'hi User8          guibg=NONE                guifg='.s:base1
+
+" What is this again?
+exe 'hi User9          guibg='.s:base02.'                guifg='.s:green
+
+" WileMenu matches
+exe "hi! WildMenu"       .s:fmt_none   .s:fg_base2  .s:bg_blue
+
+" }}}
