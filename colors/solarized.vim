@@ -784,7 +784,17 @@ exe "hi! texRefLabel"    . s:fg_yellow .s:bg_back   .s:fmt_none
 "}}}
 " ruby highlighting "{{{
 " ---------------------------------------------------------------------
-exe "hi! rubyDefine"     . s:fg_base1  .s:bg_back   .s:fmt_bold
+exe "hi! rubyDefine"          . s:fg_base1    .s:bg_back   .s:fmt_bold
+exe "hi! rubyCurlyBlock"      . s:fg_yellow   .s:bg_back   .s:fmt_bold
+exe "hi! rubySymbol"          . s:fg_orange   .s:bg_back   .s:fmt_bold
+exe "hi! rubyStringDelimiter" . s:fg_cyan     .s:bg_back   .s:fmt_bold
+exe "hi! rubyInclude"         . s:fg_blue     .s:bg_back   .s:fmt_bold
+exe "hi! rubyRegexpDelimiter" . s:fg_orange   .s:bg_back   .s:fmt_bold
+exe "hi! rubyRegexpSpecial"   . s:fg_orange   .s:bg_back   .s:fmt_bold
+exe "hi! rubyRegexp"          . s:fg_orange   .s:bg_back   .s:fmt_bold
+exe "hi! rubyPseudoVariable"  . s:fg_violet   .s:bg_back   .s:fmt_bold
+exe "hi! rubyBoolean"         . s:fg_violet   .s:bg_back   .s:fmt_bold
+exe "hi! rubyInteger"         . s:fg_orange   .s:bg_back   .s:fmt_bold
 "rubyInclude
 "rubySharpBang
 "rubyAccess
