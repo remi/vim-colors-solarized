@@ -655,6 +655,9 @@ exe "hi! DiffText"       .s:fmt_none   .s:fg_blue   .s:bg_base02 .s:sp_blue
     endif
 endif
 exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0  .s:bg_none
+exe "hi! lineAdded"      .s:fmt_none   .s:fg_green  .s:bg_none
+exe "hi! lineModified"   .s:fmt_none   .s:fg_yellow .s:bg_none
+exe "hi! lineRemoved"    .s:fmt_none   .s:fg_red    .s:bg_none
 exe "hi! Conceal"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_red
 exe "hi! SpellCap"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_violet
