@@ -1130,7 +1130,7 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 " Custom colors by @remi {{{
 
 " filename
-exe 'hi! User1          ' . s:fmt_none . s:bg_blue   . s:fg_base2
+exe 'hi! User1          ' . s:fmt_none . s:bg_green   . s:fg_base2
 
 " attribute names
 exe 'hi! User3          ' . s:fmt_none . s:bg_base02 . s:fg_base01
