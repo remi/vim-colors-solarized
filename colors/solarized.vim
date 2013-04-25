@@ -536,7 +536,7 @@ endif
 " note that link syntax to avoid duplicate configuration doesn't work with the
 " exe compiled formats
 
-exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_back
+exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_none
 
 exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
 "       *Comment         any comment
@@ -629,7 +629,7 @@ exe "hi! Title"          .s:fmt_bold   .s:fg_orange .s:bg_none
 exe "hi! VisualNOS"      .s:fmt_stnd   .s:fg_none   .s:bg_base02 .s:fmt_revbb
 exe "hi! WarningMsg"     .s:fmt_bold   .s:fg_red    .s:bg_none
 exe "hi! WildMenu"       .s:fmt_none   .s:fg_base2  .s:bg_base02 .s:fmt_revbb
-exe "hi! Folded"         .s:fmt_undb   .s:fg_base0  .s:bg_base02  .s:sp_base03
+exe "hi! Folded"         .s:fmt_none   .s:fg_base0  .s:bg_base02  .s:sp_base03
 exe "hi! FoldColumn"     .s:fmt_none   .s:fg_base0  .s:bg_base02
 if      (g:solarized_diffmode=="high")
 exe "hi! DiffAdd"        .s:fmt_revr   .s:fg_green  .s:bg_none
@@ -663,7 +663,7 @@ exe "hi! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_red
 exe "hi! SpellCap"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_violet
 exe "hi! SpellRare"      .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_cyan
 exe "hi! SpellLocal"     .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_yellow
-exe "hi! Pmenu"          .s:fmt_none   .s:fg_base0  .s:bg_base02  .s:fmt_revbb
+exe "hi! Pmenu"          .s:fmt_none   .s:fg_blue   .s:bg_base2   .s:fmt_revbb
 exe "hi! PmenuSel"       .s:fmt_none   .s:fg_base01 .s:bg_base2   .s:fmt_revbb
 exe "hi! PmenuSbar"      .s:fmt_none   .s:fg_base2  .s:bg_base0   .s:fmt_revbb
 exe "hi! PmenuThumb"     .s:fmt_none   .s:fg_base0  .s:bg_base03  .s:fmt_revbb
@@ -787,16 +787,16 @@ exe "hi! texRefLabel"    . s:fg_yellow .s:bg_back   .s:fmt_none
 "}}}
 " ruby highlighting "{{{
 " ---------------------------------------------------------------------
-exe "hi! rubyDefine"          . s:fg_base1    .s:bg_back   .s:fmt_bold
-exe "hi! rubyCurlyBlock"      . s:fg_yellow   .s:bg_back   .s:fmt_bold
-exe "hi! rubySymbol"          . s:fg_orange   .s:bg_back   .s:fmt_bold
-exe "hi! rubyStringDelimiter" . s:fg_cyan     .s:bg_back   .s:fmt_bold
-exe "hi! rubyInclude"         . s:fg_blue     .s:bg_back   .s:fmt_bold
-exe "hi! rubyRegexpDelimiter" . s:fg_orange   .s:bg_back   .s:fmt_bold
-exe "hi! rubyRegexpSpecial"   . s:fg_orange   .s:bg_back   .s:fmt_bold
-exe "hi! rubyRegexp"          . s:fg_orange   .s:bg_back   .s:fmt_bold
-exe "hi! rubyPseudoVariable"  . s:fg_violet   .s:bg_back   .s:fmt_bold
-exe "hi! rubyBoolean"         . s:fg_violet   .s:bg_back   .s:fmt_bold
+exe "hi! rubyDefine"          . s:fg_base2    .s:bg_none   .s:fmt_bold
+exe "hi! rubyCurlyBlock"      . s:fg_yellow   .s:bg_none   .s:fmt_bold
+exe "hi! rubySymbol"          . s:fg_orange   .s:bg_none   .s:fmt_bold
+exe "hi! rubyStringDelimiter" . s:fg_cyan     .s:bg_none   .s:fmt_none
+exe "hi! rubyInclude"         . s:fg_blue     .s:bg_none   .s:fmt_none
+exe "hi! rubyRegexpDelimiter" . s:fg_orange   .s:bg_none   .s:fmt_bold
+exe "hi! rubyRegexpSpecial"   . s:fg_orange   .s:bg_none   .s:fmt_bold
+exe "hi! rubyRegexp"          . s:fg_orange   .s:bg_none   .s:fmt_bold
+exe "hi! rubyPseudoVariable"  . s:fg_violet   .s:bg_none   .s:fmt_bold
+exe "hi! rubyBoolean"         . s:fg_violet   .s:bg_none   .s:fmt_bold
 "rubyInclude
 "rubySharpBang
 "rubyAccess
@@ -1130,13 +1130,13 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 " Custom colors by @remi {{{
 
 " filename
-exe 'hi! User1          ' . s:fmt_none . s:bg_blue   . s:fg_base1
+exe 'hi! User1          ' . s:fmt_none . s:bg_blue   . s:fg_base2
 
 " attribute names
 exe 'hi! User3          ' . s:fmt_none . s:bg_base02 . s:fg_base01
 
 " attribute values
-exe 'hi! User4          ' . s:fmt_none . s:bg_base02 . s:fg_base1
+exe 'hi! User4          ' . s:fmt_none . s:bg_base02 . s:fg_base2
 
 " help
 exe 'hi! User5          ' . s:fmt_none . s:bg_base02 . s:fg_magenta
