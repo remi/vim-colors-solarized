@@ -592,7 +592,7 @@ exe "hi! Ignore"         .s:fmt_none   .s:fg_none   .s:bg_none
 exe "hi! Error"          .s:fmt_bold   .s:fg_red    .s:bg_none
 "       *Error           any erroneous construct
 
-exe "hi! Todo"           .s:fmt_bold   .s:fg_magenta.s:bg_none
+exe "hi! Todo"           .s:fmt_none   .s:fg_magenta.s:bg_none
 "       *Todo            anything that needs extra attention; mostly the
 "                        keywords TODO FIXME and XXX
 "
@@ -609,8 +609,8 @@ else
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base00 .s:bg_base02
     exe "hi! NonText"    .s:fmt_bold   .s:fg_base00 .s:bg_none
 endif
-exe "hi! StatusLine"     .s:fmt_none   .s:fg_base1  .s:bg_base02 .s:fmt_revbb
-exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base00 .s:bg_base02 .s:fmt_revbb
+exe "hi! StatusLine"     .s:fmt_none   .s:fg_base2  .s:bg_blue
+exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base2 .s:bg_blue
 exe "hi! Visual"         .s:fmt_none   .s:bg_back
 exe "hi! Directory"      .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! ErrorMsg"       .s:fmt_revr   .s:fg_red    .s:bg_none
@@ -1154,7 +1154,7 @@ exe 'hi! User8          ' . s:fmt_none . s:bg_none   . s:fg_base1
 exe 'hi! User9          ' . s:fmt_none . s:bg_base02 . s:fg_green
 
 " WileMenu matches
-exe 'hi! WildMenu       ' . s:fmt_none . s:fg_base2  . s:bg_blue
+exe 'hi! WildMenu       ' . s:fmt_none . s:fg_base2  . s:bg_green
 
 " Comments
 exe 'hi! Comment        ' . s:fmt_none . ' guifg=#476C80'
