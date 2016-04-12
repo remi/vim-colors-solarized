@@ -24,10 +24,10 @@ let s:base1 = "14"
 let s:base2 = "7"
 let s:base3 = "15"
 let s:yellow = "3"
-let s:orange = "9"
+let s:orange = "1"
 let s:red = "1"
 let s:magenta = "5"
-let s:violet = "13"
+let s:violet = "5"
 let s:blue = "4"
 let s:cyan = "6"
 let s:green = "2"
@@ -143,14 +143,14 @@ exe "hi! SpecialKey" . s:fmt_bold . s:fg_base02 . s:bg_none
 exe "hi! NonText" . s:fmt_bold . s:fg_base02 . s:bg_none
 exe "hi! StatusLine" . s:fmt_none . s:fg_base2 . s:bg_green
 exe "hi! StatusLineNC" . s:fmt_bold . s:fg_base2 . s:bg_green
-exe "hi! Visual" . s:fmt_none . s:bg_base03
+exe "hi! Visual" . s:fmt_none . s:bg_blue . s:fg_base2
 exe "hi! Directory" . s:fmt_none . s:fg_blue . s:bg_none
 exe "hi! ErrorMsg" . s:fmt_revr . s:fg_red . s:bg_none
 exe "hi! IncSearch" . s:fmt_stnd . s:fg_orange . s:bg_none
 exe "hi! Search" . s:fmt_revr . s:fg_yellow . s:bg_none
 exe "hi! MoreMsg" . s:fmt_none . s:fg_blue . s:bg_none
 exe "hi! ModeMsg" . s:fmt_none . s:fg_blue . s:bg_none
-exe "hi! LineNr" . s:fmt_none . s:fg_base01 . s:bg_base02
+exe "hi! LineNr" . s:fmt_none . s:fg_base01 . s:bg_base02 . s:fmt_bold
 exe "hi! Question" . s:fmt_bold . s:fg_cyan . s:bg_none
 exe "hi! VertSplit" . s:fmt_none . s:fg_base00 . s:bg_base00
 exe "hi! VertSplit" . s:fmt_revbb . s:fg_base00 . s:bg_base02
@@ -184,7 +184,7 @@ exe "hi! CursorColumn" . s:fmt_none . s:fg_none . s:bg_base02
 exe "hi! CursorLine" . s:fmt_uopt . s:fg_none . s:bg_base02 . s:sp_base1
 exe "hi! ColorColumn" . s:fmt_none . s:fg_none . s:bg_base02
 exe "hi! Cursor" . s:fmt_none . s:fg_base03 . s:bg_base0
-exe "hi! MatchParen" . s:fmt_bold . s:fg_red . s:bg_base01
+exe "hi! MatchParen" . s:bg_base02 . s:fmt_bold
 
 " Vim syntax highlighting
 " ---------------------------------------------------------------------
@@ -273,7 +273,7 @@ exe "hi! solarizedTrailingSpace " . s:fmt_undr . s:fg_red . s:bg_none . s:sp_red
 exe 'hi! User1 ' . s:fmt_none . s:bg_green . s:fg_base2
 
 " attribute names
-exe 'hi! User3 ' . s:fmt_none . s:bg_base02 . s:fg_base01
+exe 'hi! User3 ' . s:fmt_bold . s:bg_base02 . s:fg_base01
 
 " attribute values
 exe 'hi! User4 ' . s:fmt_none . s:bg_base02 . s:fg_base2
@@ -297,7 +297,7 @@ exe 'hi! User9 ' . s:fmt_none . s:bg_base02 . s:fg_green
 exe 'hi! WildMenu ' . s:fmt_none . s:fg_base2 . s:bg_magenta
 
 " Comments
-exe 'hi! Comment ' . s:fmt_none . s:fg_base01
+exe 'hi! Comment ' . s:fg_base01 . s:fmt_bold
 
 " License
 " ---------------------------------------------------------------------
