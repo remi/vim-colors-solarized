@@ -262,6 +262,10 @@ exe "hi! rubyRegexp" . s:fg_orange . s:bg_none . s:fmt_bold
 exe "hi! rubyPseudoVariable" . s:fg_violet . s:bg_none . s:fmt_bold
 exe "hi! rubyBoolean" . s:fg_violet . s:bg_none . s:fmt_bold
 
+" Elixir highlighting
+" ---------------------------------------------------------------------
+exe "hi! elixirStructDelimiter" . s:fg_yellow . s:bg_none . s:fmt_bold
+
 " Highlight Trailing Space
 " ---------------------------------------------------------------------
 syn match solarizedTrailingSpace "\s*$"
