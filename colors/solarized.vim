@@ -141,8 +141,8 @@ exe "hi! Todo" . s:fmt_none . s:fg_magenta. s:bg_none
 " ---------------------------------------------------------------------
 exe "hi! SpecialKey" . s:fmt_bold . s:fg_base02 . s:bg_none
 exe "hi! NonText" . s:fmt_bold . s:fg_base02 . s:bg_none
-exe "hi! StatusLine" . s:fmt_none . s:fg_base2 . s:bg_green
-exe "hi! StatusLineNC" . s:fmt_bold . s:fg_base2 . s:bg_green
+exe "hi! StatusLine" . s:fmt_none . s:fg_base1 . s:bg_green
+exe "hi! StatusLineNC" . s:fmt_bold . s:fg_base1 . s:bg_green
 exe "hi! Visual" . s:fmt_none . s:bg_blue . s:fg_base2
 exe "hi! Directory" . s:fmt_none . s:fg_blue . s:bg_none
 exe "hi! ErrorMsg" . s:fmt_revr . s:fg_red . s:bg_none
@@ -280,7 +280,7 @@ exe "hi! solarizedTrailingSpace " . s:fmt_undr . s:fg_red . s:bg_none . s:sp_red
 " Custom colors by @remi
 " ---------------------------------------------------------------------
 " filename
-exe 'hi! User1 ' . s:fmt_none . s:bg_green . s:fg_base2
+exe 'hi! User1 ' . s:fmt_none . s:bg_green . s:fg_base1
 
 " attribute names
 exe 'hi! User3 ' . s:fmt_bold . s:bg_base02 . s:fg_base01
@@ -304,7 +304,7 @@ exe 'hi! User8 ' . s:fmt_none . s:bg_none . s:fg_base1
 exe 'hi! User9 ' . s:fmt_none . s:bg_base02 . s:fg_green
 
 " WildMenu matches
-exe 'hi! WildMenu ' . s:fmt_none . s:fg_base2 . s:bg_magenta
+exe 'hi! WildMenu ' . s:fmt_none . s:fg_base1 . s:bg_magenta
 
 " Comments
 exe 'hi! Comment ' . s:fg_base01 . s:fmt_bold
