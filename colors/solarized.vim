@@ -317,7 +317,7 @@ exe 'hi! User9 ' . s:fmt_none . s:bg_base02 . s:fg_green
 exe 'hi! WildMenu ' . s:fmt_none . s:fg_base1 . s:bg_magenta
 
 " Comments
-exe 'hi! Comment ' . s:fg_base01 . s:fmt_bold
+exe 'hi! Comment ' . s:fg_base01 . s:fmt_bold . s:fmt_ital
 
 " License
 " ---------------------------------------------------------------------
