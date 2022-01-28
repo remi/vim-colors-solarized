@@ -292,6 +292,12 @@ exe "hi! solarizedTrailingSpace " . s:fmt_undr . s:fg_red . s:bg_none . s:sp_red
 exe "hi! CtrlPMatch" . s:fg_base02 . s:bg_yellow
 exe "hi! CtrlPNoEntries" . s:fg_red . s:bg_none . s:fmt_bold
 
+" Signify highlighting
+" ---------------------------------------------------------------------
+exe "hi! SignifySignAdd" . s:fg_green . s:bg_none
+exe "hi! SignifySignDelete" . s:fg_red . s:bg_none
+exe "hi! SignifySignChange" . s:fg_base00 . s:bg_none
+
 " Custom colors by @remi
 " ---------------------------------------------------------------------
 " filename
