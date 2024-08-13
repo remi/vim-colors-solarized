@@ -17,10 +17,10 @@ let colors_name = "solarized"
 let s:vmode = "cterm"
 let s:base03 = "8"
 let s:base02 = "0"
-let s:base01 = "10"
+let s:base01 = "7"
 let s:base00 = "11"
 let s:base0 = "12"
-let s:base1 = "14"
+let s:base1 = "15"
 let s:base2 = "7"
 let s:base3 = "15"
 let s:yellow = "3"
@@ -133,8 +133,8 @@ let s:sp_cyan = ""
 
 " Basic highlighting
 " ---------------------------------------------------------------------
-exe "hi! Normal" . s:fmt_none . s:fg_base0 . s:bg_none
-exe "hi! Comment" . s:fmt_ital . s:fg_base01 . s:bg_none
+exe "hi! Normal" . s:fmt_none . s:fg_base1 . s:bg_none
+exe "hi! Comment" . s:fmt_bold . s:fg_base01 . s:bg_none
 exe "hi! Constant" . s:fmt_none . s:fg_cyan . s:bg_none
 exe "hi! Identifier" . s:fmt_none . s:fg_blue . s:bg_none
 exe "hi! Statement" . s:fmt_none . s:fg_green . s:bg_none
@@ -159,7 +159,7 @@ exe "hi! IncSearch" . s:fmt_stnd . s:fg_orange . s:bg_none
 exe "hi! Search" . s:fmt_revr . s:fg_yellow . s:bg_none
 exe "hi! MoreMsg" . s:fmt_none . s:fg_blue . s:bg_none
 exe "hi! ModeMsg" . s:fmt_none . s:fg_blue . s:bg_none
-exe "hi! LineNr" . s:fmt_none . s:fg_base01 . s:bg_none
+exe "hi! LineNr" . s:fmt_bold . s:fg_base02 . s:bg_none
 exe "hi! Question" . s:fmt_bold . s:fg_cyan . s:bg_none
 exe "hi! VertSplit" . s:fmt_none . s:fg_base00 . s:bg_base00
 exe "hi! VertSplit" . s:fmt_revbb . s:fg_base00 . s:bg_base02
@@ -197,7 +197,7 @@ exe "hi! MatchParen" . s:bg_none . s:fmt_bold
 
 " Vim syntax highlighting
 " ---------------------------------------------------------------------
-exe "hi! vimCommentString" . s:fmt_none . s:fg_violet . s:bg_none
+exe "hi! vimCommentString" . s:fmt_bold . s:fg_violet . s:bg_none
 exe "hi! vimCommand" . s:fmt_none . s:fg_yellow . s:bg_none
 exe "hi! vimCmdSep" . s:fmt_bold . s:fg_blue . s:bg_none
 exe "hi! helpExample" . s:fmt_none . s:fg_base1 . s:bg_none
@@ -227,7 +227,7 @@ hi! link diffLine Identifier
 
 " Git highlighting
 " ---------------------------------------------------------------------
-exe "hi! gitcommitComment" . s:fmt_bold . s:fg_base01 . s:bg_none
+exe "hi! gitcommitComment" . s:fmt_bold . s:fg_base02 . s:bg_none
 exe "hi! gitcommitUnmerged" . s:fmt_bold . s:fg_green . s:bg_none
 exe "hi! gitcommitOnBranch" . s:fmt_bold . s:fg_base01 . s:bg_none
 exe "hi! gitcommitBranch" . s:fmt_bold . s:fg_magenta . s:bg_none
@@ -325,7 +325,7 @@ exe 'hi! User8 ' . s:fmt_none . s:bg_none . s:fg_base1
 exe 'hi! WildMenu ' . s:fmt_none . s:fg_base1 . s:bg_magenta
 
 " Comments
-exe 'hi! Comment ' . s:fg_base01 . s:fmt_bold . s:fmt_ital
+exe 'hi! Comment ' . s:fg_base03 . s:fmt_bold
 
 " License
 " ---------------------------------------------------------------------
